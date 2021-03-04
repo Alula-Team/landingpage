@@ -1,0 +1,70 @@
+body {
+    background-color: #060707;
+}
+/* Navigation Bar */
+.active:hover {
+    border-bottom: 2px solid white;
+}
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 800;
+}
+.nav-link {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Jumbotron */
+.title {
+    color: #fff;
+    font-size: 50px;  
+    /* font-weight: 700; */
+}
+.sub-text {
+    color: #ffffff90;
+    font-size: 22px;
+    margin-top: 30px;
+}
+.coming-soon {
+    color: #7556FF;
+    font-size: 18px;
+}
+
+/* Featurette */
+.feature-icon {
+    background-color:#7556FF;
+    width: 100px;
+    border-radius: 10px;
+}
+.feature-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+}
+.feature-subtext {
+    color: #ffffff90;
+    font-size: 18px;
+}
+.sub-feature-title {
+    color: #fff;
+    font-size: 18px;
+}
+.sub-feature-text {
+    color: #ffffff90;
+}
+
+/* Pricing */
+.pricing-main {
+    color: #fff;
+    font-size: 45px;
+    font-weight: 700;
+}
+.pricing-specific {
+    color: #7556FF;
+}
+hr {
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
