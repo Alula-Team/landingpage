@@ -1,172 +1,419 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <head>
+        <meta charset="utf-8" />
+        <title>Alula | Property Management for DIY Landlords</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Free Property Management Software for DIY Landlords" />
+        <meta name="keywords" content="Property Management, Realestate, Software, Landlord, Tenant, Mobile" />
+        <meta name="author" content="Kane Toomer" />
+        <meta name="email" content="kane@alulapm.com" />
+        <meta name="website" content="https://alulapm.com" />
+        <meta name="Version" content="v1.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./images/Logo_color.svg">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- tobii css -->
+        <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+        <!-- Slider -->               
+        <link rel="stylesheet" href="css/tiny-slider.css"/> 
+        <!-- Main Css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    </head>
 
-    <!-- CSS -->
-    <link href="styles.css" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
-    <link rel="alternate icon" href="./images/favicon.ico">
-    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#ff8a01">
-
-    <title>Alula | Your Pocket Property Manager</title>
-</head>
-<body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-custom pt-4 px-5">
-        <div class="container-fluid">
-          <a class="navbar-brand " href="#">
-              <img src="./images/favicon.svg" alt="Alula" width="50">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
-              <li class="nav-item me-5">
-                <a class="nav-link active" href="#features">Features</a>
-              </li>
-              <li class="nav-item me-5">
-                <a class="nav-link active" href="#pricing">Pricing</a>
-              </li>
-              <li>
-                <a class="nav-link active" href="mailto: kane@alulapm.com">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </nav>
-    <!-- END Navigation Bar -->
-
-    <!-- Jumbotron -->
-    <div class="container-fluid p-5">
-        <div class="container p-md-5">
-            <div class="row">
-                <div class="col col-md-6 pt-5 mt-5">
-                    <h1 class="title mt-3">Property Management Reimagined</h1>
-                    <p class="sub-text">All inclusive property management application that helps independent landlords easily and affordably manage their rental properties.</p>
-                    <p class="coming-soon">We will be launching soon for iOS and Android. Be the first by signing up early!</p>
-                    <a class="btn btn-lg btn-danger" href="https://ul243oj69zu.typeform.com/to/nl8IbrWs">Sign Up for Alula!</a>
-                    
-                </div>
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="./images/landingImage.svg" alt="Screenshot of App" width="700" height="600">
+    <body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- END Jumbotron -->
-
-    <!-- Featurette -->
-    <div class="container-fluid">
-        <div class="container p-5">
-            <div class="container px-lg-5">
-                <div class="d-flex justify-content-center" id="features">
-                    <p class="feature-icon text-center p-2 text-white">Features</p>
-                </div>
-                <h3 class="text-center feature-title mt-sm-2">A better way to manage rental properties</h3>
-                <p class="feature-subtext text-center">Crafted with you in mind. With Alula, you can manage your properties more efficiently right from your phone.</p>
-                <div class="row pt-5 mt-5">
-                    <div class="col-12 col-md-4">
-                        <div class="d-flex justify-content-center">
-                            <img src="./images/p-img.svg" alt="Icon for properties Feature" width="50">
-                        </div>
-                        <h4 class="mt-lg-3 sub-feature-title text-center">Add Properties</h4>
-                        <p class="mt-3 text-center sub-feature-text">Add as many properties as you like. Each property will show a detailed history of occupancy, transactions and service requests. </p>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="d-flex justify-content-center">
-                            <img src="./images/tr-img.svg" alt="Icon for Transactions Feature" width="50">
-                        </div>
-                        <h4 class="mt-lg-3 sub-feature-title text-center">Track Transactions</h4>
-                        <p class="mt-3 text-center sub-feature-text">Most transactions will be automated once you and your tenant enable Auto Payment Collection. However, you also have the ability to add in transactions manually.</p>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="d-flex justify-content-center">
-                            <img src="./images/te-img.svg" alt="Icon for Tenants Feature" width="50">
-                        </div>
-                        <h4 class="mt-lg-3 sub-feature-title text-center">Manage Tenants</h4>
-                        <p class="mt-3 text-center sub-feature-text">Whether they are currently renting, have previously rented or are new renters, you can onboard and renew lease agreements with ease. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-5 mt-5">
-                <div class="col-12 col-md-7 d-flex justify-content-center d-none d-lg-block  pt-5">
-                    <img src="./images/add-ons.svg" alt="Icon for add ons" width="450">
-                </div>
-                <div class="col-12 col-lg-5">
-                    <h2 class="feature-title mt-3">Add ons? No, they are included!</h2>
-                    <p class="feature-subtext">We are here for you. We don't believe in making you buy add ons to manage your portfolio. Besides, your success is our success!</p>
-                    <div class="row">
-                        <div class="col-12">
-                            <h4 class="sub-feature-title"> - Auto Payment Collection</h4>
-                            <p class="sub-feature-text">Securely collect ACH rent payments from your tenants. Tenants can set up auto-pay so they always pay their rent on time.</p>
-                        </div>
-                        <div class="col-12">
-                            <h4 class="sub-feature-title"> - Report Generation</h4>
-                            <p class="sub-feature-text">Since we do all of the bookkeeping, export PDF's of the financial records for each property or your entire portfolio. </p>
-                        </div>
-                        <!-- <div class="col-12">
-                            <h4 class="sub-feature-title"> - Tenant Screening</h4>
-                            <p class="sub-feature-text">Screen your tenants with ease. All you have to do is enter the informaiton of prospective tenants and we will send you a detailed report of their rental history.</p>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Featurette -->
-
-    <!-- Pricing -->
-    <div class="container-fluid pt-5 mt-5">
-        <hr class="m-5" />
-        <div class="row py-3">
-            <div class="col-12 col-md-4 ps-5">
-                <p class="pricing-specific">EVERYTHING YOU NEED</p>
-                <h4 class="text-white">All-in-one Platform, Free for landlords</h4>
-                <p class="sub-feature-text">
-                    You, as a small business owner, should keep every dollar that you can to manage your portfolio. Alula is free for landlords, tenants pay a 1% transaction fee on rent payments.
-                </p>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-12 col-md-3 mt-3">
-                <ul>
-                    <li class="text-white mb-3"><img src="./images/Check.svg" alt="check mark" width="25" class="me-3"> Unlimited Properties</li>
-                    <li class="text-white mb-3"><img src="./images/Check.svg" alt="check mark" width="25" class="me-3"> Unlimited Transactions</li>
-                    <li class="text-white mb-3"><img src="./images/Check.svg" alt="check mark" width="25" class="me-3"> Unlimited Tenants</li>
-                    <li class="text-white mb-3"><img src="./images/Check.svg" alt="check mark" width="25" class="me-3"> Unlimited Reports</li>
-                    <!-- <li class="text-white mb-3"><img src="Check.svg" alt="check mark" width="25" class="me-3"> Unlimited Tenant Screening</li> -->
-                </ul>
-            </div>
-            <div class="col-12 col-md-3 mt-3">
-                <ul>
-                    <li class="text-white mb-3"><img src="./images/Check.svg" alt="check mark" width="25" class="me-3"> No Subscription Necessary</li>
-                    <!-- <li class="text-white mb-3"><img src="./images/Check.svg" alt="check mark" width="25" class="me-3"> Multiple Tenants per property</li> -->
-                    <li class="text-white mb-3"><img src="./images/Check.svg" alt="check mark" width="25" class="me-3"> Detailed Notifications</li>
-                    <li class="text-white mb-3"><img src="./images/Check.svg" alt="check mark" width="25" class="me-3"> Service Request Management</li>
-                    <li class="text-white mb-3"><img src="./images/Check.svg" alt="check mark" width="25" class="me-3"> Tenant App</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- END Pricing -->
-    
-    <!-- Footer -->
-    <hr class="m-5" />
-    <div class="d-flex justify-content-center pb-5">
-        <p class="text-white text-center mb-3">&copy; 2021 Alula Property Management. All Rights Reserved.</p>
+        <!-- Loader -->
         
-    </div>
-    <!-- END Footer -->
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <a class="logo" href="index.html">
+                    <span class="logo-light-mode">
+                        <img src="./images/Logo_color.svg" class="l-dark mt-2" height="65" alt="">
+                        <img src="./images/logo.svg" class="l-light mt-2" height="65" alt="">
+                    </span>
+                </a>
+                <div class="buy-button">
+                    <a href="https://ul243oj69zu.typeform.com/to/nl8IbrWs" target="_blank">
+                        <div class="btn btn-primary login-btn-primary">Sign Up Early for Alula!</div>
+                        <div class="btn btn-light login-btn-light">Sign Up Early for Alula!</div>
+                    </a>
+                </div>
+                <!--end login button-->
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu nav-light">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-</body>
+                        <!-- FEATURES TAB -->
+                        <li><a href="#features" class="sub-menu-item">Features</a></li>
+                        <li><a href="#faq" class="sub-menu-item">FAQ</a></li>
+                        <li><a href="#contact" class="sub-menu-item">Contact</a></li>
+
+                        <!-- TENANT TAB -->
+                        <!-- <li><a href="#" class="sub-menu-item">Tenant Portal</a></li> -->
+
+                        <!-- COMPANY TAB -->
+                        <!-- <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Company</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="#" class="sub-menu-item">About Us</a></li>
+                                <li><a href="#" class="sub-menu-item">Careers</a></li>
+                                <li><a href="page-privacy.html" class="sub-menu-item">Privacy Policy</a></li>
+                                <li><a href="page-terms.html" class="sub-menu-item">Terms & Conditions</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <!--end navigation menu-->
+                    <div class="buy-menu-btn d-none">
+                        <a href="https://ul243oj69zu.typeform.com/to/nl8IbrWs" target="_blank" class="btn btn-primary">Get Started</a>
+                    </div>
+                    <!--end login button-->
+                </div>
+                <!--end navigation-->
+            </div>
+            <!--end container-->
+        </header>
+        <!--end header-->
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <section class="bg-half-260 bg-primary d-table w-100" style="background: url('images/bg.png') center;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="title-heading">
+                            <h1 class="heading text-white title-dark mb-4">Powerfully simple tool <br> for managing your rental portfolio</h1>
+                            <p class="para-desc mx-auto text-white-50">Introducing Alula, property management software for DIY landlords. Unlimited properties, tenants and transactions.</p>
+                            <div class="mt-4 pt-2">
+                                <p href="https://ul243oj69zu.typeform.com/to/nl8IbrWs" class="btn btn-light">Coming Soon to iOS, Android and Web</p>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </section><!--end section-->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+        <!-- FEATURES START -->
+        <section class="section" id="features">
+            <div class="container mt-50 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6 order-1 order-md-2">
+                        <img src="./images/1.jpg" class="img-fluid rounded-md shadow-lg" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div class="section-title text-md-start text-center">
+                            <h4 class="title mb-4">Keep up with your <br> portfolio anytime and anywhere.</h4>
+                            <p class="text-muted mb-0 para-desc">Get started with <span class="text-primary fw-bold">Alula</span>, we provide everything you need to be successful as an independent landlord. With Alula, you can:</p>
+                            
+                            <div class="d-flex align-items-center text-start mt-4 pt-2">
+                                <div class="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
+                                    <i class="uil uil-paint-tool"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <a href="javascript:void(0)" class="text-dark h6">Manage Service Requests</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center text-start mt-4">
+                                <div class="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
+                                    <i class="uil uil-money-withdrawal"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <a href="javascript:void(0)" class="text-dark h6">Get Paid Seemlessly</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center text-start mt-4">
+                                <div class="text-primary h4 mb-0 me-3 p-3 rounded-md shadow">
+                                    <i class="uil uil-university"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <a href="javascript:void(0)" class="text-dark h6">Stay Tax Compliant</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+        <!--end section-->
+        
+        <section class="section bg-light" id="faq">
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="section-title text-md-start text-center">
+                            <h4 class="title mb-4">Frequently asked questions</h4>
+                            <p class="text-muted mb-0 para-desc">Here is an overview of <span class="text-primary fw-bold">Alula</span>.</p>
+                            
+                            <ul class="list-unstyled text-muted mt-4 mb-0">
+                                <li class="mb-0"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Export reports for easy tax filings</li>
+                                <li class="mb-0"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Digitally create leases</li>
+                                <li class="mb-0"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Manage properties on any device</li>
+                                <li class="mb-0"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>Add properties as you acquire them. No caps or minimums</li>
+                            </ul>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item rounded shadow">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        How does it work ?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse border-0 collapse show" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted bg-white">
+                                        Whether you are using the mobile app or website, Alula is easy to use. Sign up, link your bank account to accept rent payments, add properties, add tenants and add transactions. We keep track of everything, so when you are ready to file taxes, just export your pdf reportings.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item rounded shadow mt-2">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        What's the catch?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted bg-white">
+                                        No catch! With Alula, it doesn't matter if you have one property or one million properties. We do not place a cap on properties added and there are no monthly pricing minimums.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded shadow mt-2">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        What does it cost?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted bg-white">
+                                        Alula is free for landlords. Tenants do pay a 1% transaction fee when paying their rent. This is still cheaper than most of the other property management sites out there.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item rounded shadow mt-2">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        How does rent collection work?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-muted bg-white">
+                                        Payments are transfered from the Tenant's bank account to the Landlord's bank account, making it easy to collect rent and avoiding trips to the bank. Both parties just have to connect their accounts. We use Dwolla, one of the best and most secure payment processors out there.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+    
+                        <!-- <div class="col-lg-7 col-md-6 order-1 order-md-2">
+                            <div class="card border-0">
+                                <div class="card-body p-0">
+                                    <img src="images/contact.svg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div> -->
+                        <!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div><!--end container-->
+        </section><!--end section-->
+
+        <section class='section' id='contact'>
+            <div class="row mt-5 pt-5 pt-md-4 justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h4 class="title mb-4">Want to get in touch?</h4>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+            <div class="container mt-100 mt-60 pb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0 order-2 order-md-1">
+                        <img src="./images/contact.svg" class="img-fluid rounded-md shadow-lg" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-6 order-1 order-md-2">
+                        <div class="title-heading ms-lg-4">
+                            <h4 class="mb-4">Contact Details</h4>
+                            <p class="text-muted mb-0 para-desc">Get started with <span class="text-primary fw-bold">Alula</span>, we provide everything you need to be successful as an independent landlord.</p>
+                            <div class="d-flex contact-detail align-items-center mt-3">
+                                <div class="icon">
+                                    <i data-feather="mail" class="fea icon-m-md text-dark me-3"></i>
+                                </div>
+                                <div class="flex-1 content">
+                                    <h6 class="title fw-bold mb-0">Email</h6>
+                                    <a href="mailto:kane@alulapm.com" class="text-primary">kane@alulapm.com</a>
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="d-flex contact-detail align-items-center mt-3">
+                                <div class="icon">
+                                    <i data-feather="phone" class="fea icon-m-md text-dark me-3"></i>
+                                </div>
+                                <div class="flex-1 content">
+                                    <h6 class="title fw-bold mb-0">Phone</h6>
+                                    <a href="tel:+152534-468-854" class="text-primary">+152 534-468-854</a>
+                                </div>
+                            </div> -->
+                            
+                            <!-- <div class="d-flex contact-detail align-items-center mt-3">
+                                <div class="icon">
+                                    <i data-feather="map-pin" class="fea icon-m-md text-dark me-3"></i>
+                                </div>
+                                <div class="flex-1 content">
+                                    <h6 class="title fw-bold mb-0">Location</h6>
+                                    <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" data-type="iframe" class="video-play-icon text-primary lightbox">View on Google map</a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div>
+        </section>
+
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-footer">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a href="#" class="logo-footer">
+                            <img src="./images/logo.svg" height="80" alt="">
+                        </a>
+                        <p class="mt-4">Property Management Software for DIY Landlords.</p>
+                        <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/alulapropertymanagement" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/company/alulapm/" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0"></div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <!-- <h5 class="text-light footer-head">Company</h5>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="page-aboutus.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
+                            <li><a href="page-blog-grid.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Blog</a></li>
+                            <li><a href="page-jobs.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Careers</a></li>
+                            <li><a href="page-privacy.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Privacy Policy</a></li>
+                            <li><a href="page-terms.html" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Terms of Services</a></li>
+                        </ul> -->
+                    </div>
+                    <!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h5 class="text-light footer-head">Newsletter</h5>
+                        <p class="mt-4">Sign up and receive the latest updates via email.</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="d-grid">
+                                        <a href="https://ul243oj69zu.typeform.com/to/nl8IbrWs" target="_blank">
+                                            <div class="btn btn-light login-btn-light">Sign Up Early for Alula!</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-start">
+                            <p class="mb-0">© 2021 Alula Property Management. All Rights Reserved.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
+
+        
+
+        <!-- javascript -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- tobii js -->
+        <script src="js/tobii.min.js "></script>
+        <!-- Contact -->
+        <script src="js/contact.js"></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Main Js -->
+        <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
+        <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
+    </body>
 </html>
