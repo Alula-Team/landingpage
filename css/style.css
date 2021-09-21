@@ -724,7 +724,7 @@ video:focus {
 
 .btn-outline-light {
   border: 1px solid #f8f9fc;
-  color: #f8f9fc;
+  color: #fff !important;
   background-color: transparent;
 }
 
