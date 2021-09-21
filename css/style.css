@@ -267,7 +267,7 @@ a.text-blue:hover, a.text-blue:focus {
 }
 
 .bg-footer {
-  background-color: #202942 !important;
+  background-color: #818692 !important;
 }
 
 .bg-soft-footer {
@@ -867,12 +867,13 @@ video:focus {
 
 .btn.btn-outline-light {
   border: 1px solid #dee2e6 !important;
-  color: #3c4858 !important;
+  color: #ffffff !important;
   background-color: transparent;
 }
 
 .btn.btn-outline-light:hover, .btn.btn-outline-light:focus, .btn.btn-outline-light:active, .btn.btn-outline-light.active, .btn.btn-outline-light.focus {
   background-color: #f8f9fc !important;
+  color: #3c4858 !important;
 }
 
 .btn.btn-icon {
@@ -2011,6 +2012,7 @@ p {
 #topnav .logo {
   float: left;
   color: #3c4858 !important;
+  /* margin-left: 30px; */
 }
 
 #topnav .logo .l-dark,
