@@ -2017,7 +2017,7 @@ p {
 
 #topnav .logo .l-dark,
 #topnav .logo .logo-dark-mode {
-  display: none;
+  display: inline-block;
 }
 
 #topnav .logo .l-light,
